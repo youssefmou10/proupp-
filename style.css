@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: ;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container h3{
+      color:white;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 4px;
+  }
+  .container a{
+      padding: 10px 20px;
+      background-color: coral;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 5px;
+  }
+  .container a:hover{
+      filter: brightness(0.8);
+  }
+  .container.active {
+      filter: brightness(0.7) blur(5px);
+  }
+  .container-popup {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    background-image: url("https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1130&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container-popup h5 {
+    font-size: 40px;
+    color: #680f68;
+    font-weight: bold;
+  }
+  .container-popup label{
+    font-size: 30px;
+    color: #680f68;
+    font-weight: bold;
+
+  }
+  .container-popup input{
+      padding:10px;
+      margin:10px auto;
+      width:90%;
+      border:3px solid rgb(0,0,0);
+      outline: none;
+  }
+  .container-popup a{
+      background-color: blue;
+      padding: 10px;
+      color:white;
+      margin:10px auto;
+      width:90%;
+      text-decoration: none;
+      font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .times i {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+  }
+  .container-popup.active{
+      visibility: hidden;
+  }
